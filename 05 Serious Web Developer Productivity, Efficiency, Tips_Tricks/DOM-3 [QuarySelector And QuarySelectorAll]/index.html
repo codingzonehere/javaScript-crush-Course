@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore DOM</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 title="This is DOM">Explore DOM (Inser DOM...)</h1>
+    </header>
+    <main>
+        <section id="about">
+          <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, voluptate.</p>
+          <article>
+            <h2 title="DOM">article-1</h2>
+            <p class="author">author-1</p>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi ea doloribus dolor harum rem molestiae cupiditate beatae, nihil atque quibusdam eius enim veritatis veniam aliquid soluta hic quas tempora in voluptatum! Incidunt minima cum, recusandae inventore quasi id doloremque asperiores et aliquid dolor vel quas consectetur alias voluptatum quidem!</p>
+          </article>
+          <article class="special">
+            <h2 title="DOM">article-2</h2>
+            <p class="author">author-2</p>
+            <p class="description">Beatae incidunt voluptate nihil quisquam? Ducimus reprehenderit nemo, officia a aliquid nihil dolorem illum rem voluptas voluptate sit deserunt perspiciatis libero! Repudiandae iusto sequi vel, nemo obcaecati qui dolores ducimus vitae voluptas quibusdam perspiciatis enim quo nisi mollitia similique laboriosam soluta ullam eius? Accusantium ut quaerat dolores officia quas quo.</p>
+          </article>
+          <article class="special">
+            <h2 title="DOM">article-3</h2>
+            <p class="author">author-3</p>
+            <p class="description">Odit quia, illo quaerat voluptatum molestias beatae repellat? Reprehenderit optio quisquam sit accusantium, sunt nisi maiores. Odit asperiores facilis cum voluptates. Ut voluptates, et eius eos asperiores, ratione illo aperiam recusandae officia delectus fuga laudantium neque nobis hic? Quas sed est voluptatum id nostrum temporibus, non quod repellat modi eius.</p>
+          </article>
+
+        </section>
+    </main>
+    <!--<script src="js/script.js"> </script>-->
+    <script>
+      document.body.style.backgroundColor = 'tomato';
+       // quary selector.
+       var authors = document.querySelectorAll('.special h2');
+        for (var i = 0; i < authors.length; i++) {
+          var element = authors[i];
+          //console.log(element);
+          element.innerHTML = 'Lekhok- ' + i ;
+          element.style.backgroundColor = 'red';
+          element.style.fontSize = '20px';
+          element.style.margin = '10px';
+          element.setAttribute('title', 'This DOM Explore.....');
+        }
+       //document.querySelector('.special h2').style.backgroundColor = 'gray'; // First element only
+       //document.querySelectorAll('.special h2').style.backgroundColor = 'red'; // All match element
+
+       //Interview question..........
+       
+       //01. getelementByclass-->HTML Collection ---> html .element collection.
+       //02.  quarySelector --> .Node list pabo
+
+      //set attribute......
+      //document.querySelector('h1').setAttribute('title', 'This DOM Explore.....');
+    </script>
+</body>
+</html>

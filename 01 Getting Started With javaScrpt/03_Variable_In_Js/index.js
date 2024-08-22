@@ -1,0 +1,3 @@
+// var integer and string........
+var Name = 'Tanvir Ahmed';
+console.log(typeof Name); 

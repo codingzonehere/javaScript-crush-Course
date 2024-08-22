@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore DOM [Insert]</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 title="This is DOM">Explore DOM</h1>
+    </header>
+    <main>
+        <section id="about">
+          <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, voluptate.</p>
+          <article id="First-article">
+            <h2 title="DOM">article-1</h2>
+            <p class="author">author-1</p>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi ea doloribus dolor harum rem molestiae cupiditate beatae, nihil atque </p>
+          </article>
+          <article class="special">
+            <h2 title="DOM">article-2</h2>
+            <p class="author">author-2</p>
+            <p class="description">Beatae incidunt voluptate nihil quisquam? Ducimus reprehenderit nemo, officia a aliquid nihil dolorem illum rem voluptas voluptate sit deserunt perspiciatis libero! </p>
+          </article>
+          <article class="special">
+            <h2 title="DOM">article-3</h2>
+            <p class="author">author-3</p>
+            <p class="description">Odit quia, illo quaerat voluptatum molestias beatae repellat? Reprehenderit optio quisquam sit accusantium, sunt nisi maiores.</p>
+          </article>
+          <article>
+            <h2>Product Item: </h2>
+            <ul id="item-list">
+              <li>Item-1</li>
+              <li>Item-2</li>
+              <li>Item-3</li>
+              <li>Item-4</li>
+              <li>Item-5</li>
+              <li>Item-6</li>
+            </ul>
+          </article>
+        </section>
+    </main>
+    <!--<script src="js/script.js"> </script>-->
+    <script>
+      const article = document.getElementById('First-article');
+      //Create tag...........!
+      const newElementParagraph = document.createElement('p');
+      //Create element......
+      newElementParagraph.innerHTML = "Bangladesh forms the sovereign part of the historic and ethnolinguistic region of Bengal.";
+      //Append Element.........
+      article.appendChild(newElementParagraph);
+
+      // add more gift item.....
+      const ul = document.getElementById('item-list');
+      const li = document.createElement('li');
+      li.innerHTML = "New item";
+      ul.appendChild(li);
+
+    </script>
+</body>
+</html>
